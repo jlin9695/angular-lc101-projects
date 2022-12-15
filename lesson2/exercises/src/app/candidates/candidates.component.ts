@@ -24,7 +24,15 @@ export class CandidatesComponent implements OnInit {
   }
 
   // Code the addToCrew function here:
-
+  addToCrew(person: object) {
+    //TODO: complete the function!
+    for(candidate in this.candidates){
+      if(this.crew.find(candidate => candidate === person) === undefined){
+        this.crew.push(person);
+      }
+    }
+      
+ }
 
   // BONUS: Code the changeMissionName function here:
 
